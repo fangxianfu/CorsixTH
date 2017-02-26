@@ -62,6 +62,7 @@ end
 -- order in which they are visited is not fixed.
 disease.diagnosis_rooms = {
   "scanner",
+  "x_ray",
 }
 -- Treatment rooms are the rooms which must be visited, in the given order, to
 -- cure the disease.
