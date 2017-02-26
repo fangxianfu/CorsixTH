@@ -276,7 +276,7 @@ end
 function Machine:machineRepaired(room)
   room.needs_repair = nil
   local str = self.strength
-  if self.times_used/str > 0.55 then
+  if self.times_used/str > 0.66 then
     self.strength = str - 1
   end
   self.times_used = 0
