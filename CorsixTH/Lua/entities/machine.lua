@@ -124,7 +124,7 @@ function Machine:machineUsed(room)
   local taskIndex = self.hospital:getIndexOfTask(self.tile_x, self.tile_y, "repairing")
 
   -- Too late it is about to explode
-  if threshold < 1 then
+  if threshold < 0 then
     -- Clean up any task of handyman coming to repair the machine
     self.hospital:removeHandymanTask(taskIndex, "repairing")
     -- Blow up the room
