@@ -37,7 +37,7 @@ function Staff:tickDay()
   -- Pay too high -->   happy
   local fair_wage = self.profile:getFairWage()
   local wage = self.profile.wage
-  self:changeAttribute("happiness", 0.05 * (wage - fair_wage) / (fair_wage ~= 0 and fair_wage or 1))
+  -- self:changeAttribute("happiness", 0.05 * (wage - fair_wage) / (fair_wage ~= 0 and fair_wage or 1))
   -- if you overwork your Dr's then there is a chance that they can go crazy
   -- when this happens, find him and get him to rest straight away
   if self.attributes["fatigue"] then
